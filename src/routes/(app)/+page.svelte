@@ -1,15 +1,15 @@
 <script>
-  import HGreeting from "./H-Greeting.svelte";
-  import HHeader from "./H-Header.svelte";
-  import HInfo1 from "./H-Info1.svelte";
-  import HInfo2 from "./H-Info2.svelte";
-
-  export let data;
+  import CoHeader from "./Co-Header.svelte";
+  import CoInfoPemakaian from "./Co-InfoPemakaian.svelte";
 </script>
 
-{data?.name}
-<hr />
-<HHeader />
-<HGreeting />
-<HInfo1 />
-<HInfo2 />
+<CoHeader />
+
+<h1>Selamat Datang di Jeep Kaba</h1>
+<CoInfoPemakaian />
+
+<style>
+  h1 {
+    margin: 2rem 0;
+  }
+</style>

@@ -1,6 +1,7 @@
-export const load = ({ cookies }) => {
-  const name = cookies.get("name");
-  if (name) {
-    return { name };
-  }
+export const actions = {
+  add: async ({ request, locals }) => {
+    const data = Object.fromEntries(await request.formData());
+
+    return data;
+  },
 };

@@ -1,0 +1,31 @@
+input:not([type="checkbox"]):not([type="radio"]),
+select {
+  background: transparent;
+  border: 1px solid var(--bg-5);
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  height: 2rem;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+input:focus {
+  outline: 2px solid var(--primary-5);
+}
+
+input[type="checkbox"] {
+  height: 1rem;
+  aspect-ratio: 1/1;
+}
+
+/* form-group */
+.form-group {
+  position: relative;
+}
+
+.form-group .icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}

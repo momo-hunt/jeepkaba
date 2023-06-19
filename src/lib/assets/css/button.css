@@ -1,0 +1,43 @@
+button,
+a[role="button"] {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  background: var(--bg-1);
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  font-weight: 500;
+}
+
+button.outline,
+a[role="button"].outline {
+  border: 1px solid var(--bg-4);
+}
+
+button:hover,
+a[role="button"]:hover {
+  filter: brightness(0.9);
+}
+
+/* menu */
+button.toggle-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  color: var(--bg-5);
+}
+
+button.toggle-menu:hover,
+button.toggle-menu:focus {
+  color: var(--black);
+}
+
+/* submit */
+button[type="submit"] {
+  background: var(--primary);
+  color: var(--white);
+  justify-content: center;
+}

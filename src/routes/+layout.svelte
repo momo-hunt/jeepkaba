@@ -1,9 +1,17 @@
 <script>
-  import "$lib/assets/css/style.css";
+  import "$lib/assets/css";
 </script>
 
 <svelte:head>
   <title>Jeep Kaba</title>
 </svelte:head>
 
-<slot />
+<main>
+  <slot />
+</main>
+
+<style>
+  main {
+    padding: 0 1rem;
+  }
+</style>
